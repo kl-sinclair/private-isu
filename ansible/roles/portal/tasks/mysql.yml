@@ -1,6 +1,6 @@
 ---
 - name: install mysql
-  apt: name=mysql-server state=latest default_release=jessie update_cache=yes
+  apt: name=mysql-server state=latest update_cache=yes
 
 - name: start mysql
   service: name=mysql state=running enabled=yes
